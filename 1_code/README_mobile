@@ -1,0 +1,36 @@
+The folder demo1 contains the android application.
+The Java files are available at this path :  demo1\app\src\main\java\com\example\himabindu\demo1
+A brief description of each file is as follows:
+
+REGISTRATION:
+MainActivity: Starts user instance by initializing login objects. Relevant object calls from different files.
+LoginActivity: User login is initiated. Authentication using database values
+RegisterActivity: New user Registration. Opens the database and enters data.
+ProfileActivity: User profile created. All user details are stored in the database.
+DashboardActivity: App options - Profile, Heart Rate Monitor, Step Counter
+SQLiteHelper: Definition of database attributes.
+
+STEP COUNTER FUNCTIONALITY:
+StepCounter: Starts StepDetection by calling relevant objects.
+StepDetector: Reads sensor values and calculation of step count 
+SensorFilter: Normalization of values
+
+HEART RATE MONITOR:
+
+HeartRateMonitor: Initialize all necessary sensors - camera, wake screen, flash etc. Get preview frame and process red values using rolling average filter.
+ImageProcessing: Calculate Redness in camera images
+
+
+LAYOUT FILES:
+
+The folder demo1 also contains UI design files for the project.
+Path to Layout files: demo1\app\src\main\res\layout
+Each xml file is the layout for the respective pages.
+activity_dashboard: App options
+activity_main: Login page
+activity_register: Register page
+hrm: Heart rate Monitor
+profile: User Profile page
+step_count: Steps,miles,calorie counter page
+
+Some images are stored in the mipmap folders which are used in the Heart rate Monitor to calculate redness.
